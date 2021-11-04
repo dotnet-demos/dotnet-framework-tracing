@@ -6,11 +6,13 @@ Basic tracing in .Net Framework
 # Purpose
 - Quick debugging of .Net Framework applications (legacy) in higher environments by turning the logging on in the configuration file.
 - Below goes the Tracing code in the application.
-`
- Trace.TraceError("This is a trace.traceerror");
- Trace.TraceInformation("This is a trace.traceinformaton");
- Trace.TraceWarning("This is a trace.tracewarning");
-`
+
+```csharp
+Trace.TraceError("This is a trace.traceerror");
+Trace.TraceInformation("This is a trace.traceinformaton");
+Trace.TraceWarning("This is a trace.tracewarning"); 
+```
+
 # FAQ
 
 ## Isn't .Net Framework dead?
