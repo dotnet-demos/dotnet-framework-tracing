@@ -1,7 +1,7 @@
 # DotNet Framework Tracing
 Basic tracing in .Net Framework
 
-> Please note this is not recommended for production logging. For production use other products such as Azure Application Insights 
+> Please note this is not recommended for production. For production, use other products such as Azure Application Insights 
 
 # Purpose
 - Quick debugging of .Net Framework applications (legacy) in higher environments by turning the logging on in the configuration file.
