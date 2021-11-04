@@ -21,7 +21,7 @@ Personally I don't recommend TraceSource as I have experienced performance issue
 If we are in debugging higher level environments and we don't have access to production instrumentation, but have permission to update the application configuration, this is useful.
 Don't ask why. Welcome to legacy Enterprise world.
 
-## Why I need to use the <filter>? What about <switches>
+## Why I need to use the <filter>? What about switches
 switches require application to check switch before logging. That cannot be simply done when using static methods of Trace class. Use TraceSource to get that feature.
 
 ## Shall I use XmlWriterTraceListener always?
@@ -35,7 +35,7 @@ switches require application to check switch before logging. That cannot be simp
 Use [Service Trace Viewer Tool](https://docs.microsoft.com/en-us/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe?redirectedfrom=MSDN)
 
 ## Can I push the traces to EventLog and see in EventViewer?
-- Yes. Though it is not in this sample it is [very much possible](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.eventlogtracelistener?view=windowsdesktop-5.0).
+- Yes. Though it is not in this sample, it is [very much possible](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.eventlogtracelistener?view=windowsdesktop-5.0).
 - It does not output optional trace data.
 - It may require permission to write to EventLog.
 
